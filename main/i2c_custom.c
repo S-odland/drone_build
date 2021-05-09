@@ -34,7 +34,7 @@ void i2c_custom_read(uint8_t *data_rd,uint8_t reg, uint8_t write_addr, uint8_t r
 	i2c_master_cmd_begin(I2C_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
 	i2c_cmd_link_delete(cmd);
 
-	vTaskDelay(30 / portTICK_RATE_MS);
+	vTaskDelay(5 / portTICK_RATE_MS);
 
 	cmd = i2c_cmd_link_create();
 	i2c_master_start(cmd);

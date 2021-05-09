@@ -4,7 +4,9 @@ set(COMPONENT_PRIV_REQUIRES )
 
 set(COMPONENT_SRCS "main.c"
 				   "imu.c"
-				   "i2c_custom.c")
+				   "i2c_custom.c"
+				   "custom_wifi.c"
+				   "websocket.c")
 
 set(COMPONENT_ADD_INCLUDEDIRS ".")
 
